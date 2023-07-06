@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouseup 이벤트</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(250, 156, 156);
+        border: 2px solid black;
+        transition: background 0.3s;
+      }
+      .box.active {
+        background-color: rgb(165, 255, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouseup 이벤트</h1>
+    <div class="box" onmouseup="handleMouseUp()"></div>
+
+    <script>
+      function handleMouseUp() {
+        var box = document.querySelector(".box");
+        box.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

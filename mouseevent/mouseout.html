@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouseout 이벤트</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(250, 156, 156);
+        border: 2px solid black;
+      }
+      .box.active {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouseout 이벤트</h1>
+    <div class="box" onmouseout="handleMouseOut()"></div>
+
+    <script>
+      function handleMouseOut() {
+        var box = document.querySelector(".box");
+        box.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

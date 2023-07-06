@@ -1,0 +1,27 @@
+@charset "utf-8";
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+div {
+  text-align: center;
+}
+img {
+  margin-top: 10px;
+  width: 300px;
+  position: absolute;
+}
+p {
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: none;
+  position: relative;
+  top: 300px;
+  left: 100px;
+}
+button {
+  margin-top: 10px;
+  position: relative;
+  top: 300px;
+}

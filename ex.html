@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ex.css" />
+    <title>자바스크립트 이벤트</title>
+  </head>
+  <body>
+    <div>
+      <img src="시로모.jpg" alt="시로모" />
+      <button class="over" id="btn" onclick="textOpen()">상세 설명 보기</button>
+      <p id="ptext">
+        겁이 많은 모루카 중에서도 특히 겁이 많다. 마음씨 좋은 운전자에게 응석을
+        부리기도 하지만 여러 트러블에 휘말려들때가 많다. 테디를 누님처럼 따르고
+        있다. 제일 좋아하는 것은 양상추.
+      </p>
+      <!-- <button class="over" id="btn1" onclick="textHidden()">
+        상세 설명 숨기기
+      </button>
+      <button class="over" id="btn2" onclick="textOpen()">
+        상세 설명 보기
+      </button> -->
+    </div>
+
+    <script>
+      //   function textHidden() {
+      //     const text = document.querySelector("btn1");
+      //     if (ptext.style.visibility !== "hidden") {
+      //       ptext.style.visibility = "hidden";
+      //     } else {
+      //       btn1.style.visibility = "visible";
+      //     }
+      //   }
+      //   function textOpen() {
+      //     const text = document.querySelector("btn2");
+      //     if (ptext.style.visibility !== "visible") {
+      //       ptext.style.visibility = "visible";
+      //     }
+      //   }
+
+      function textOpen() {
+        var ptext = document.querySelector("#ptext");
+        var openButton = document.querySelector("#btn");
+        if (ptext.style.display === "none") {
+          ptext.style.display = "block";
+        } else {
+          ptext.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
